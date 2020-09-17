@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include phone {
+        flex-direction: column;
+    }
 
     &:before {
         content: '';
@@ -21,13 +24,23 @@
 
     &__yearAndMilestone {
         width: 25%;
+        @include phone {
+            width: 100%;
+        }
 
         h1 {
             margin-top: 1rem;
+            @include phone {
+                margin-bottom: 2rem;
+                margin-top: 0.5rem;
+            }
         }
     }
 
     &__additionalInfo {
         width: 60%;
+        @include phone {
+            width: 100%;
+        }
     }
 }
