@@ -1,0 +1,12 @@
+// sizes
+$smText: 0.8rem;
+
+// color
+$darkText: #1b1c1e;
+$lightText: #fbfbfb;
+$ctaColor: #16b9ad;
+$shade: #edeeee;
+
+@mixin transition($duration, $transition) {
+    transition: $duration $transition;
+}

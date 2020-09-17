@@ -1,0 +1,57 @@
+@import '../../mixins.scss';
+
+.heroSection {
+    width: 100%;
+    height: 100vh;
+
+    &__heroSectionWrapper {
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__heroSectionContent {
+            width: 40%;
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                width: 90%;
+            }
+
+            .inputGroup {
+                width: 100%;
+                display: flex;
+                margin-top: 1rem;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                    border-radius: 5px;
+                    width: 55%;
+                    height: 45px;
+                    padding: 0 1rem;
+                    background-color: $shade;
+                }
+
+                p {
+                    margin: 0;
+                    width: 43%;
+                }
+            }
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            mask-image: url('../../icons/blob.svg');
+        }
+    }
+}

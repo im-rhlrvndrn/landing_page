@@ -1,0 +1,109 @@
+@import './mixins.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: $darkText;
+    transform: translate3d(0);
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+input,
+button {
+    width: max-content;
+    padding: 1em;
+    background: none;
+    font-size: 16px;
+    border: none;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+label {
+    font-weight: 700 !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+.textUnderlay {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + 6%);
+        height: 50%;
+        background-color: $ctaColor;
+        opacity: 0.2;
+        z-index: -1;
+    }
+}
+
+.cta {
+    text-align: center;
+    margin-top: 1rem;
+    width: max-content;
+    padding: $smText 2rem;
+    border-radius: 5px;
+    background-color: rgba($color: $ctaColor, $alpha: 1);
+    color: $lightText;
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+    @include transition(0.2s, linear);
+
+    &:hover {
+        background-color: rgba($color: $ctaColor, $alpha: 0.8);
+    }
+}
+
+.subtitle {
+    font-size: $smText;
+    color: $ctaColor !important;
+    font-weight: 600;
+}
