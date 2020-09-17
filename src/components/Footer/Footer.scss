@@ -5,6 +5,9 @@
     height: 50vh;
     padding: 4rem 0;
     background-color: rgba($color: $ctaColor, $alpha: 0.2);
+    @include tablet {
+        height: auto;
+    }
 
     &__wrapper {
         margin: 0 auto;
@@ -13,8 +16,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablet {
+            width: 90%;
+        }
+        @include phone {
+            flex-direction: column;
+        }
 
         &__footerLogo {
+            @include tablet {
+                margin-bottom: 1rem;
+            }
+
             h1 {
                 font-size: 2rem;
                 text-transform: uppercase;
@@ -24,6 +37,9 @@
         &__footerItemList {
             display: flex;
             flex-direction: column;
+            @include tablet {
+                margin-bottom: 1rem;
+            }
 
             &__header {
                 margin-bottom: 1rem;
