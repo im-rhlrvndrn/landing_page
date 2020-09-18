@@ -38,8 +38,8 @@ const Navbar = () => {
                         objectives
                     </NavLink>
                 </ul>
+                <div className='cta'>get started</div>
             </div>
-            <div className='cta'>get started</div>
         </div>
     );
 };

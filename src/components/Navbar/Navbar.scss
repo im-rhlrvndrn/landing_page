@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem 1rem 4rem;
+    padding: 2rem 0 1rem 0;
     position: fixed;
     width: 100%;
     height: max-content;
@@ -14,7 +14,11 @@
     z-index: 10;
 
     &__navItemsWrapperDiv {
+        width: 70%;
+        margin: 0 auto;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .navbarLogo {
             text-transform: uppercase;
@@ -24,7 +28,6 @@
         }
 
         &__navItemsContainer {
-            width: 100% !important;
             display: flex;
             align-items: center;
 
@@ -74,9 +77,9 @@
                     }
                 }
             }
-            .cta {
-                margin: 0 0 0 auto;
-            }
+        }
+        .cta {
+            margin: 0 0 0 auto;
         }
     }
 }
