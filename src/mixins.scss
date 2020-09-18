@@ -1,7 +1,8 @@
 // sizes
 $smText: 0.8rem;
 $tablet: 768px;
-$phone: 500px;
+$phone: 510px;
+$smphone: 300px;
 
 // color
 $darkText: #1b1c1e;
@@ -14,13 +15,19 @@ $shade: #edeeee;
 }
 
 @mixin tablet {
-    @media screen and (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
         @content;
     }
 }
 
 @mixin phone {
-    @media screen and (max-width: $phone) {
+    @media only screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin smphone {
+    @media only screen and (max-width: $smphone) {
         @content;
     }
 }

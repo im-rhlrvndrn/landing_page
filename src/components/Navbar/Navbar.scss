@@ -14,18 +14,21 @@
     z-index: 10;
 
     &__navItemsWrapperDiv {
+        display: flex;
+
+        .navbarLogo {
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 800;
+            margin-right: 4rem;
+        }
+
         &__navItemsContainer {
+            width: 100% !important;
             display: flex;
             align-items: center;
 
-            .navbarLogo {
-                text-transform: uppercase;
-                font-size: 1rem;
-                font-weight: 800;
-                margin-right: 4rem;
-            }
-
-            &__navItem:not(.navbarLogo) {
+            &__navItem:not(.cta) {
                 position: relative;
                 width: max-content;
                 margin-right: 4rem;
@@ -34,7 +37,7 @@
                 @include transition(0.4s, ease-in-out);
 
                 &:hover {
-                    font-weight: 800;
+                    font-weight: 600;
 
                     &:before {
                         content: '';
@@ -55,7 +58,7 @@
                 }
 
                 &.active {
-                    font-weight: 800;
+                    font-weight: 600;
 
                     &:before {
                         content: '';
@@ -70,6 +73,9 @@
                         z-index: -1;
                     }
                 }
+            }
+            .cta {
+                margin: 0 0 0 auto;
             }
         }
     }

@@ -8,6 +8,9 @@
     @include tablet {
         height: auto;
     }
+    @include phone {
+        padding: 4rem 0 2rem 0;
+    }
 
     &__wrapper {
         margin: 0 auto;
@@ -21,11 +24,15 @@
         }
         @include phone {
             flex-direction: column;
+            align-items: start;
         }
 
         &__footerLogo {
             @include tablet {
                 margin-bottom: 1rem;
+            }
+            @include phone {
+                margin-bottom: 2rem;
             }
 
             h1 {
@@ -39,6 +46,10 @@
             flex-direction: column;
             @include tablet {
                 margin-bottom: 1rem;
+            }
+
+            &:last-child {
+                margin: 0;
             }
 
             &__header {

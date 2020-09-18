@@ -10,6 +10,9 @@
     @include phone {
         flex-direction: column;
     }
+    @include smphone {
+        padding: 2rem 0 2rem 2rem;
+    }
 
     &:before {
         content: '';

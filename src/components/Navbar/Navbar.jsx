@@ -8,14 +8,11 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='navbar__navItemsWrapperDiv'>
+                <NavLink to='/' className='navbarLogo'>
+                    genisis <br />
+                    vision
+                </NavLink>
                 <ul className='navbar__navItemsWrapperDiv__navItemsContainer'>
-                    <NavLink
-                        to='/'
-                        className='navbarLogo navbar__navItemsWrapperDiv__navItemsContainer__navItem'
-                    >
-                        genisis <br />
-                        vision
-                    </NavLink>
                     <NavLink
                         to='/about'
                         className='navbar__navItemsWrapperDiv__navItemsContainer__navItem'
