@@ -10,9 +10,11 @@
         font-weight: 600;
         color: rgb(255, 255, 255);
     }
+
     img{
         height: 100vh;
     }
+
     &__content{
         height: 100vh;
         width: 70%;
@@ -32,5 +34,16 @@
             margin-bottom: 20px;
         }
        
+    }
+
+    &__cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        h2{
+            font-size: 1.5rem;
+        }
     }
 }

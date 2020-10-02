@@ -23,6 +23,10 @@ const Mission = () => {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus distinctio deleniti perspiciatis quasi quas dicta fugit. Voluptas ex mollitia veniam reprehenderit nemo, doloribus suscipit incidunt autem soluta similique, possimus qui!</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed laborum obcaecati iste quo sint reiciendis aperiam adipisci beatae nemo voluptas deserunt tenetur eligendi earum labore, placeat temporibus voluptatem impedit consectetur.</p>
                 </div>
+                <div className="missionHeroSection__cta">
+                    <h2>Start Contributing to growth of Indian Economy</h2>
+                    <p className="cta">Donate 1$ Now</p>
+                </div>
             </div>
         </>
     );
