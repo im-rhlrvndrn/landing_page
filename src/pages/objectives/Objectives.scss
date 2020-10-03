@@ -1,0 +1,65 @@
+@import '../../mixins.scss';
+
+.objectivesHeroSection{
+    width: 75vw;
+    margin: 0 auto;
+
+    &__header{  
+        height: 100vh;
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            right: 50%;
+            text-align: center;
+            font-size: 2rem;
+        }
+        img{
+            width: 20vw;
+            height: 70vh;
+            position: absolute;
+            right: 30%;
+            border-radius: 10px;
+            margin-top: 8rem;
+            background-size: cover;
+        }
+    }
+    &__content{
+        height: 110vh;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        ul{
+            list-style: none;
+            width: 45vw;
+            line-height: 1.5em;
+            margin: 0 3rem 0 0;
+            background-color: #bcebe7;
+            border-radius: 10px;
+            li{
+                margin: 2rem 1rem;
+            }
+        }
+        &__rightSide{
+            width: 25vw;
+            h2{
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+            .group{
+                margin: 1rem 0;
+                text-align: center;
+                img{
+                    height: 30vh;
+                   border-radius: 10px;
+                }
+                h3{
+                    margin: 0.5rem 0;
+                }
+                p{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
