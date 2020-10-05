@@ -1,0 +1,77 @@
+@import '../../mixins.scss';
+
+.missionHeroSection{
+    &__title{
+        position: absolute;
+        right: 50%;
+        left: 10%;
+        bottom: 10%;
+        font-size: 4rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        @include tablet{
+            right: 10%;
+            text-align: center;
+        }
+        @include phone{
+            left: 0;
+            right: 0;
+            font-size: 2rem;
+        }
+    }
+
+    img{
+        height: 100vh;
+        @include tablet{
+            margin-bottom: 4rem;
+        }
+        @include phone{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__content{
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        @include tablet{
+            width: 90%;
+        }
+        h1{
+            font-size: 4rem;
+            @include tablet{
+                font-size: 3rem;
+            }
+        }
+        p{
+            line-height: 1.5em;
+            font-size: 1.5rem;
+            @include phone{
+                font-size: 1rem;
+            }
+        }
+        :nth-child(4){
+            margin-bottom: 20px;
+        }
+       
+    }
+
+    &__cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        h2{
+            font-size: 1.5rem;
+            @include phone{
+                text-align: center;
+                margin: 0.5rem;
+            }
+        }
+    }
+}

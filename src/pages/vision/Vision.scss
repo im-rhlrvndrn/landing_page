@@ -1,0 +1,121 @@
+@import '../../mixins.scss';
+
+.visionHeroSection{
+    &__header{
+        display: flex;
+        height: 100vh;
+        width: 75%;
+        margin: 0 auto;
+        @include tablet{
+            width: 90%;
+        }
+        @include phone{
+            height: 90vh;
+        }
+        img{
+            width: 60%;
+            height: 70%;
+            margin-top: 23vh;
+            border-radius: 20px;
+            @include phone{
+                width: 95%;
+                height: 50%;
+            }
+        }
+        h1{
+            position: absolute;
+            right: 10%;
+            left: 59%;
+            bottom: 30%;
+            font-size: 3rem;
+            font-weight: 600;
+            color: $darkText;
+            @include tablet{
+                right: 0;
+                text-align: center;
+            }
+            @include phone{
+                bottom: 15%;
+                left: 5%;
+                right: 5%;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__content{
+        height: 130vh;
+        width: 75%;
+        margin: 2rem auto;
+        @include tablet{
+            width: 95%;
+        }
+        @include phone{
+            height: 250vh;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        &__gridContainer{
+            display: grid;
+            height: 110vh;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 2rem;
+            @include tablet{
+                grid-gap: 1rem;
+            }
+            @include phone{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                @include phone{
+                    width: 95%;
+                    height: 40%;
+
+                }
+            }
+            p{
+                line-height: 1.5em;
+                font-size: 1.5rem;
+            }
+            :nth-child(1){
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+            :nth-child(2){
+                grid-column: 3/5;
+                grid-row: 1/2;
+            }
+            :nth-child(3){
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+        }
+    }
+    &__cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        h2{
+            font-size: 1.5rem;
+            @include phone{
+                text-align: center;
+                margin: 0.5rem;
+            }
+        }
+    }
+
+}
